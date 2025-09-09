@@ -10,7 +10,7 @@ export interface Member {
 export const members: Member[] = [
   {
     id: 1,
-    name: "João",
+    name: "João Lara",
     role: "Desenvolvedor Full-Stack",
     image: "/images/image.jpg",
     description: "Apaixonado por criar soluções inovadoras e eficientes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum architecto excepturi repellendus harum! Ex quae similique sunt quidem harum ipsam natus fuga, expedita minima suscipit iste eum. Quaerat, ducimus.",
