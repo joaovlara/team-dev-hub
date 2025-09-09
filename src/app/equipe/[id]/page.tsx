@@ -1,6 +1,7 @@
 'use client'
 
 import { members } from "@/data/members";
+import { techColorMap } from "@/data/colors";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -18,27 +19,6 @@ export default function MemberPage({ params }: { params: { id: string } }) {
 
   const previousMemberId = memberIndex > 0 ? members[memberIndex - 1].id : null;
   const nextMemberId = memberIndex < members.length - 1 ? members[memberIndex + 1].id : null;
-
-  const techColorMap: { [key: string]: string } = {
-    JavaScript: "bg-yellow-400 text-black",
-    TypeScript: "bg-blue-500 text-white",
-    React: "bg-sky-500 text-white",
-    "Node.js": "bg-green-500 text-white",
-    Python: "bg-blue-800 text-white",
-    Figma: "bg-purple-500 text-white",
-    "Adobe XD": "bg-pink-500 text-white",
-    Sketch: "bg-yellow-500 text-black",
-    Jira: "bg-blue-700 text-white",
-    Trello: "bg-blue-400 text-white",
-    Slack: "bg-purple-600 text-white",
-    "Google Analytics": "bg-orange-500 text-white",
-    SEO: "bg-green-600 text-white",
-    "Content Marketing": "bg-teal-500 text-white",
-    R: "bg-blue-600 text-white",
-    SQL: "bg-gray-700 text-white",
-    HTML: "bg-orange-600 text-white",
-    CSS: "bg-blue-600 text-white",
-  };
 
   return (
     <section className="bg-stone-900 min-h-screen flex justify-center items-center p-4">

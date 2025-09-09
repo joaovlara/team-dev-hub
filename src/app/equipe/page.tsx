@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function EquipePage() {
   return (
-    <section className="bg-stone-900 py-24 sm:py-32 h-[80vh] flex flex-col justify-center ">
+    <section className="bg-stone-900 py-24 sm:py-32 flex flex-col justify-center min-h-screen">
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">
+          <h2 className="text-3xl title">
             Conheça nossa equipe
           </h2>
-          <p className="mt-6 text-lg/8 text-gray-400">
+          <p className="subtitle mt-6">
             Somos um grupo dinâmico de indivíduos apaixonados pelo que fazemos e dedicados a entregar os melhores resultados para nossos clientes.
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function EquipePage() {
                   <img
                     alt={member.name}
                     src={member.image}
-                    className="size-16 rounded-full outline-1 -outline-offset-1 outline-white/10"
+                    className="size-16 rounded-full"
                   />
                   <div>
                     <h3 className="text-base/7 font-semibold tracking-tight text-white">{member.name}</h3>
