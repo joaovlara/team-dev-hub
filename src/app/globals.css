@@ -87,4 +87,13 @@
   .member a {
     @apply text-sm font-medium text-indigo-400 hover:text-indigo-300
   }
+
+  .icon-navigation {
+    @apply text-stone-400 hover:text-stone-200 transition-colors;
+  }
+
+  .budget {
+    @apply inline-block px-2 py-1 rounded-full text-xs font-semibold mr-2 mb-2
+  }
+
 }
