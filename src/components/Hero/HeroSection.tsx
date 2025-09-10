@@ -37,7 +37,7 @@ export default function HeroSection() {
             <p className="subtitle">
               {texts.heroSection.subtitle}
             </p>
-            <Link href="/contact" passHref className="btn">Botao</Link>
+            <Link href="/equipe" passHref className="btn">Ver Equipe</Link>
           </div>
         </div>
       </div>
