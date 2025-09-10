@@ -2,6 +2,7 @@ export interface Member {
   id: number;
   name: string;
   role: string;
+  color?: string;
   image: string;
   description: string;
   technologies: string[];
@@ -17,6 +18,7 @@ export const members: Member[] = [
     id: 1,
     name: "João Lara",
     role: "Desenvolvedor Full-Stack",
+    color: "text-emerald-400",
     image: "/images/image.jpg",
     description: "Apaixonado por criar soluções inovadoras e eficientes. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum architecto excepturi repellendus harum! Ex quae similique sunt quidem harum ipsam natus fuga, expedita minima suscipit iste eum. Quaerat, ducimus.",
     technologies: ["JavaScript", "TypeScript", "React", "Node.js", "Python"],
@@ -30,6 +32,7 @@ export const members: Member[] = [
     id: 2,
     name: "Maria",
     role: "Designer UX/UI",
+    color: "text-pink-400",
     image: "/images/image.jpg",
     description: "Focada em criar experiências de usuário intuitivas e agradáveis.",
     technologies: ["Figma", "Adobe XD", "Sketch"],
@@ -43,6 +46,7 @@ export const members: Member[] = [
     id: 3,
     name: "Pedro",
     role: "Gerente de Projetos",
+    color: "text-blue-400",
     image: "/images/image.jpg",
     description: "Liderando a equipe para entregar projetos de alta qualidade no prazo.",
     technologies: ["Jira", "Trello", "Slack"],
@@ -56,6 +60,7 @@ export const members: Member[] = [
     id: 4,
     name: "Ana",
     role: "Especialista em Marketing Digital",
+    color: "text-red-400",
     image: "/images/image.jpg",
     description: "Estratégias criativas para aumentar a presença online e engajamento.",
     technologies: ["Google Analytics", "SEO", "Content Marketing"],
@@ -69,6 +74,7 @@ export const members: Member[] = [
     id: 5,
     name: "Lucas",
     role: "Analista de Dados",
+    color: "text-yellow-400",
     image: "/images/image.jpg",
     description: "Transformando dados em insights acionáveis para o crescimento do negócio.",
     technologies: ["Python", "R", "SQL"],
@@ -82,6 +88,7 @@ export const members: Member[] = [
     id: 6,
     name: "Carla",
     role: "Desenvolvedora Front-End",
+    color: "text-purple-400",
     image: "/images/image.jpg",
     description: "Especialista em criar interfaces web responsivas e dinâmicas.",
     technologies: ["HTML", "CSS", "JavaScript", "React"],

@@ -42,7 +42,7 @@ export default function MemberCard({ params }: { params: { id: string } }) {
             </div>
             <div className="space-y-2 flex flex-col w-full text-center md:text-left mt-4">
               <h1 className="text-2xl lg:text-3xl font-bold">{member.name}</h1>
-              <p className="text-md lg:text-lg md:pl-8">{member.role}</p>
+              <p className={`text-md lg:text-lg md:pl-8 ${member.color}`}>{member.role}</p>
             </div>
           </div>
 
