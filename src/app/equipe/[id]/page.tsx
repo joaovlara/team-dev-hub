@@ -1,9 +1,10 @@
+'use client';
+
 import { members } from "@/data/members";
 import { techColorMap } from "@/data/colors";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
 
 export default function MemberCard({ params }: { params: { id: string } }) {
   const memberId = parseInt(params.id);
