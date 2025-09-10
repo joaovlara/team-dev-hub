@@ -5,6 +5,7 @@ import { techColorMap } from "@/data/colors";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import CollapsibleContact from "@/components/CollapsibleContact/CollapsibleContact";
 
 export default function MemberCard({ params }: { params: { id: string } }) {
   const memberId = parseInt(params.id);
@@ -49,12 +50,12 @@ export default function MemberCard({ params }: { params: { id: string } }) {
           <div className="flex flex-col w-full md:w-2/3 space-y-6 md:pl-8">
 
             <div className="separator">
-              <h2 className="text-xl lg:text-2xl font-bold">Sobre</h2>
-              <p className="text-justify text-gray-150">{member.description}</p>
+              <h2 className="card-title">Sobre</h2>
+              <p className="text-justify text-stone-400">{member.description}</p>
             </div>
 
             <div className="separator">
-              <h2 className="text-xl lg:text-2xl font-bold">Tecnologias:</h2>
+              <h2 className="card-title">Tecnologias:</h2>
               <div className="flex flex-wrap gap-2 mt-2">
                 {member.technologies.map((tech) => (
                   <span key={tech}
@@ -66,10 +67,11 @@ export default function MemberCard({ params }: { params: { id: string } }) {
               </div>
             </div>
 
-            <div className="">
-              <h2 className="text-xl lg:text-2xl font-bold">Contato:</h2>
-              <p className="text-justify text-gray-150">Links para redes sociais</p>
-            </div>
+            {member.contacts && (
+              <div className="separator">
+                <CollapsibleContact contacts={member.contacts} />
+              </div>
+            )}
 
           </div>
         </div>
